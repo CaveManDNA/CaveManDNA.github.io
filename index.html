@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My_Treasure</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .site-banner {
+                background-color: #0077cc; /* Background color */
+                color: #ffffff; /* Text color */
+                padding: 20px; /* Padding inside the banner */
+                text-align: center; /* Center-align text */
+                font-size: 24px; /* Font size */
+            }
+
+            .site-banner a {
+                color: bisque; /* Link color within the banner */
+                text-decoration: none; /* Remove underlines from links */
+            }
+
+            .site-banner a:hover {
+                color: #ffffff;
+                text-decoration: none; /* Add underline on link hover */
+            }
+
+            ol {
+                list-style-type: none; /* Type of numbering: decimal (1, 2, 3, ...) */
+                padding: 20px; /* Add some padding to the left to create space */
+                
+            }
+
+            /* Hover effect on list items */
+            ol li:hover {
+                background-color: #f0f0f0;
+                padding: 5px;
+                border-radius: 5px;
+            }
+
+             /* Style the list items */
+             ol a {
+                font-size: 16px; /* Font size for list items */
+                margin-bottom: 8px; /* Spacing between list items */
+                line-height: 1.4; /* Line height for text */
+                text-decoration: none;
+                color: #333; /* Text color for the list */
+                font-family: Courier;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class = "site-banner">
+            <h1><a href="#">$ Stash $</a></h1>
+        </div>
+        <div id="sortable-div">
+            <ol id="sortable-list">
+                <li><a href="https://60plusmilfs.com/" target="_blank">60 Plus Milfs</a></li>
+                <li><a href="https://50plusmilfs.com/" target="_blank">50 Plus Milfs</a></li>
+                <li><a href="https://spankbang.com/" target="_blank">Spankbang</a></li>
+                <li><a href="https://newbrazz.com/" target="_blank">Newbrazz</a></li>
+                <li><a href="https://aagmaal.icu/" target="_blank">Aagmaal</a></li>
+                <li><a href="https://rentry.org/OnlyFans421" target="_blank">OnlyFans421</a></li>
+                <li><a href="https://rentry.co/allsex24" target="_blank">AllSex24</a></li>
+                <li><a href="https://masafun.com/" target="_blank">Masahub | Masafun</a></li> 
+                <li><a href="https://mat6tube.com/" target="_blank">Mat6tube</a></li>
+                <li><a href="https://bunkr-albums.io/" target="_blank">Bunkr Albums</a></li>
+                <li><a href="https://noodlemagazine.com/new-video" target="_blank">Noodle Magazine</a></li>
+                <li><a href="https://diosasdelporno.com/" target="_blank">Diosasdelporno</a></li> 
+                <li><a href="https://www.evilangel.com/en/videos/sort/upcoming" target="_blank">Evilangel Upcoming</a></li> 
+            </ol>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Your function to be executed when the div is loaded
+                sortList();
+            });
+
+            function sortList() {
+                const list = document.getElementById('sortable-list');
+                const items = list.getElementsByTagName('li');
+                const itemsArray = Array.from(items);
+    
+                itemsArray.sort((a, b) => {
+                    const textA = a.innerText;
+                    const textB = b.innerText;
+                    return textA.localeCompare(textB);
+                });
+    
+                for (let i = 0; i < itemsArray.length; i++) {
+                    list.appendChild(itemsArray[i]);
+                }
+            }
+        </script>
+    </body>
+</html>
